@@ -1,0 +1,23 @@
+//program to find array element
+#include<stdio.h>
+void main(){
+    int a[10],num,i,found;
+    printf("enter array elements\n");
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter the choice\n");
+    scanf("%d",&num);
+    for(i=0;i<10;i++){
+        if(num==a[i]){
+            printf("no %d present",num);
+            found=found+1;
+            break;
+        }
+        
+    }
+    if(found==0){
+        printf("number is not found");
+    }
+}
